@@ -7,7 +7,6 @@
 |
 */
 
-// import MachinesController from '#controllers/machines_controller'
 import router from '@adonisjs/core/services/router'
 const MachinesController = () => import('#controllers/machines_controller')
 
