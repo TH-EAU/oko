@@ -5,10 +5,11 @@ import {
   ColorModeProvider,
   type ColorModeProviderProps,
 } from "@/components/ui/color-mode";
+import theme from "@/theme";
 
 export function UiProvider(props: ColorModeProviderProps) {
   return (
-    <ChakraProvider value={defaultSystem}>
+    <ChakraProvider value={theme}>
       <ColorModeProvider {...props} />
     </ChakraProvider>
   );
